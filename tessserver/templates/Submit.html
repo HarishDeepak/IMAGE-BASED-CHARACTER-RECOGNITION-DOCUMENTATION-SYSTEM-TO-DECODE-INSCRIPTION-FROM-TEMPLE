@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Translated Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #814646;
+      background-image: url('../images/backgroundImg.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #a88080;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: auto auto;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Translated Result</h1>
+    <p>{{ translated_text }}</p>
+    <img src="{{ url_for('static', filename='images/'+ image_filename) }}">
+  </div>
+</body>
+</html>

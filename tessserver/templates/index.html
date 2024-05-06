@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comment Submission</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styleTrial.css') }}">
+</head>
+<body>
+  <h1>IMAGE BASED CHARACTER RECOGNITION, DOCUMENTATION SYSTEM TO DECODE INSCRIPTION FROM TEMPLE</h1>
+  <form action="/Submit" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" rows="4" cols="50" accept="image/*"><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
